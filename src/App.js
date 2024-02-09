@@ -1,20 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import Viewdata from './components/Viewdata';
-import Appbar from './components/Appbar';
+import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
+import Viewdata from './components/Viewdata';
 import Adddata from './components/Adddata';
 
 function App() {
   return (
     <div className="App">
-      {/* <Viewdata/> */}
-      <Appbar/>
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Viewdata/>}/>
         <Route path='/add' element={<Adddata/>}/>
-
-
       </Routes>
     </div>
   );
